@@ -142,14 +142,14 @@ function Nav() {
                                     </div>
                                 </li>
                                 <li class="nav-item dropdown header-profile">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
-                                        {/* <img src={require('../images/profile/17.jpg')}></img> */}
+                                    {/* <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"> */}
+                                    <Link to='/profile/Profilemain' class="nav-link" >
                                         <img src={require('../images/avatar/1.jpg')}></img>
                                         <div class="header-info">
                                             <span class="text-black">Oda Dink</span>
                                             <p class="fs-12 mb-0">Super Admin</p>
                                         </div>
-                                    </a>
+                                    </Link>
                                     <div class="dropdown-menu dropdown-menu-end">
                                         <a href="app-profile.html" class="dropdown-item ai-icon">
                                             <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" class="text-primary" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
@@ -174,33 +174,37 @@ function Nav() {
                 <div className="deznav-scroll">
                     <ul className="metismenu" id="menu">
                         <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                            <i className="flaticon-381-networking"></i>
-                            <span className="nav-text">Dashboard</span>
+                            <i className="flaticon-381-television"></i>
+                            <span className="nav-text">User</span>
                         </a>
                             <ul aria-expanded="false">
                                 {/* <li><a href="index.js">Dashboard Light</a></li> */}
                                 {/* <li><a href="index2.js">Dashboard Dark</a></li> */}
                                 <li>
-                                    <Link to="/">Dashboard</Link>
+                                    <Link to="/">User Management</Link>
                                 </li>
                                 <li>
-                                    <Link to="/searchjob/Searchjob">Search Job</Link>
+                                    <Link to="/searchjob/Searchjob">Role Management</Link>
                                 </li>
                                 <li>
-                                    <Link to="/aplica/Aplicationmain">Aplication</Link>
+                                    <Link to="/aplica/Aplicationmain">Employer Management</Link>
                                 </li>
-                                <li><a href="profile.js">Profile</a></li>
-                                <li><a href="companies.js">Companies</a></li>
-                                <li><a href="statistics.js">Statistics</a></li>
-                                <li><a href="./public/js/dashboard">Statistics</a></li>
+                                <li>
+                                    <Link to="/profile/Profilemain">Candidate Management</Link>
+                                </li>
+                                {/* <li>
+                                    <Link to="/companies/Companiesmain">Companies</Link>
+                                </li> */}
                             </ul>
                         </li>
                         <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                            <i className="flaticon-381-television"></i>
-                            <span className="nav-text">Author</span>
+                            <i class="flaticon-381-networking"></i>
+                            <span className="nav-text">Pack Management</span>
                         </a>
-                            <ul aria-expanded="false">
-                                <li><a href="app-profile.className=js">Profile</a></li>
+                            {/* <ul aria-expanded="false">
+                                <li>
+                                    <Link to='/profile/Profilemain'>Profile</Link>
+                                </li>
                                 <li><a className="has-arrow" href="javascript:void(0)" aria-expanded="false">Email</a>
                                     <ul aria-expanded="false">
                                         <li><a href="email-compose.js">Compose</a></li>
@@ -220,11 +224,11 @@ function Nav() {
                                         <li><a href="#">Customers</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul> */}
                         </li>
                         <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                            <i className="flaticon-381-controls-3"></i>
-                            <span className="nav-text">User Management</span>
+                            <i class="flaticon-381-network"></i>
+                            <span className="nav-text">Payment</span>
                         </a>
                             {/* <ul aria-expanded="false">
                                 <li><a href="chart-flot.js">Flot</a></li>
@@ -236,75 +240,74 @@ function Nav() {
                             </ul> */}
                         </li>
                         <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                            <i className="flaticon-381-internet"></i>
-                            <span className="nav-text">Role Management</span>
+                            <i class="flaticon-381-controls-3"></i>
+                            <span className="nav-text">Report</span>
                         </a>
-                            {/* <ul aria-expanded="false">
-                                <li><a href="ui-accordion.js">Accordion</a></li>
-                                <li><a href="ui-alert.js">Alert</a></li>
-                                <li><a href="ui-badge.js">Badge</a></li>
-                                <li><a href="ui-button.js">Button</a></li>
-                                <li><a href="ui-modal.js">Modal</a></li>
-                                <li><a href="ui-button-group.js">Button Group</a></li>
-                                <li><a href="ui-list-group.js">List Group</a></li>
-                                <li><a href="ui-media-object.js">Media Object</a></li>
-                                <li><a href="ui-card.js">Cards</a></li>
-                                <li><a href="ui-carousel.js">Carousel</a></li>
-                                <li><a href="ui-dropdown.js">Dropdown</a></li>
-                                <li><a href="ui-popover.js">Popover</a></li>
-                                <li><a href="ui-progressbar.js">Progressbar</a></li>
-                                <li><a href="ui-tab.js">Tab</a></li>
-                                <li><a href="ui-typography.js">Typography</a></li>
-                                <li><a href="ui-pagination.js">Pagination</a></li>
-                                <li><a href="ui-grid.js">Grid</a></li>
-
-                            </ul> */}
+                            <ul aria-expanded="false">
+                                <li>
+                                    <Link to='/'>Employer Report</Link>
+                                </li>
+                                <li>
+                                    <Link to='/'>Candidate Report</Link>
+                                </li>
+                                <li>
+                                    <Link to='/'>Payment Report</Link>
+                                </li>
+                            </ul>
                         </li>
                         <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
                             <i className="flaticon-381-heart"></i>
-                            <span className="nav-text">Employer Management</span>
+                            <span className="nav-text">Job</span>
                         </a>
-                            {/* <ul aria-expanded="false">
-                                <li><a href="uc-select2.js">Select 2</a></li>
-                                <li><a href="uc-nestable.js">Nestedable</a></li>
-                                <li><a href="uc-noui-slider.js">Noui Slider</a></li>
-                                <li><a href="uc-sweetalert.js">Sweet Alert</a></li>
-                                <li><a href="uc-toastr.js">Toastr</a></li>
-                                <li><a href="map-jqvmap.js">Jqv Map</a></li>
-                                <li><a href="uc-lightgallery.js">Light Gallery</a></li>
-                            </ul> */}
+                            <ul aria-expanded="false">
+                                <li>
+                                    <Link to='/'>Job Post</Link>
+                                </li>
+                                <li>
+                                    <Link to='/'>Category</Link>
+                                </li>
+                                <li>
+                                    <Link to='/'>Sub-Category</Link>
+                                </li>
+                            </ul>
                         </li>
-                        <li><a href="widget-basic.js" className="ai-icon" aria-expanded="false">
-                            <i className="flaticon-381-settings-2"></i>
-                            <span className="nav-text">Candidate Management</span>
-                        </a>
+                        <li>
+                            <Link to='/' className="ai-icon" aria-expanded="false">
+                                <i class="flaticon-381-notepad"></i>
+                                <span className="nav-text">Resume Management</span>
+                            </Link>
                         </li>
-                        <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                            <i className="flaticon-381-notepad"></i>
-                            <span className="nav-text">Pack Management</span>
-                        </a>
+                        {/* <li className="has-menu"> */}
+                        <li>
+                            {/* <a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false"> */}
+                            {/* <Link to='/' className="has-arrow ai-icon">
+                                <i className="flaticon-381-notepad"></i>
+                                <span className="nav-text">Candidate Verification</span>
+                            </Link> */}
+
                             {/* <ul aria-expanded="false">
                                 <li><a href="form-element.js">Form Elements</a></li>
                                 <li><a href="form-wizard.js">Wizard</a></li>
                                 <li><a href="form-ckeditor.js">ckeditor</a></li>
                                 <li><a href="form-pickers.js">Pickers</a></li>
                                 <li><a href="form-validation-jquery.js">Jquery Validate</a></li>
-                            </ul> */}
+                            </ul>  */}
                         </li>
-                        <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+                        {/* <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
                             <i className="flaticon-381-network"></i>
                             <span className="nav-text">Payment Management</span>
                         </a>
-                            {/* <ul aria-expanded="false">
+                            <ul aria-expanded="false">
                                 <li><a href="table-bootstrap-basic.js">Bootstrap</a></li>
                                 <li><a href="table-datatable-basic.js">Datatable</a></li>
-                            </ul> */}
-                        </li>
-                        <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+                            </ul>
+                        </li> */}
+
+                        {/* <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
                             <i className="flaticon-381-layer-1"></i>
                             <span className="nav-text">Report</span>
                         </a>
-                            {/* <ul aria-expanded="false">
+                            <ul aria-expanded="false">
                                 <li><a href="page-register.js">Register</a></li>
                                 <li><a href="page-login.js">Login</a></li>
                                 <li><a className="has-arrow" href="javascript:void(0)" aria-expanded="false">Error</a>
@@ -317,13 +320,14 @@ function Nav() {
                                     </ul>
                                 </li>
                                 <li><a href="page-lock-screen.js">Lock Screen</a></li>
-                            </ul> */}
-                        </li>
-                        <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+                            </ul>
+                        </li> */}
+
+                        {/* <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
                             <i className="flaticon-381-layer-1"></i>
                             <span className="nav-text">Job Posting Management</span>
                         </a>
-                            {/* <ul aria-expanded="false">
+                            <ul aria-expanded="false">
                                 <li><a href="page-register.js">Register</a></li>
                                 <li><a href="page-login.js">Login</a></li>
                                 <li><a className="has-arrow" href="javascript:void(0)" aria-expanded="false">Error</a>
@@ -336,13 +340,14 @@ function Nav() {
                                     </ul>
                                 </li>
                                 <li><a href="page-lock-screen.js">Lock Screen</a></li>
-                            </ul> */}
-                        </li>
-                        <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+                            </ul>
+                        </li> */}
+
+                        {/* <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
                             <i className="flaticon-381-layer-1"></i>
                             <span className="nav-text">Category</span>
                         </a>
-                            {/* <ul aria-expanded="false">
+                            <ul aria-expanded="false">
                                 <li><a href="page-register.js">Register</a></li>
                                 <li><a href="page-login.js">Login</a></li>
                                 <li><a className="has-arrow" href="javascript:void(0)" aria-expanded="false">Error</a>
@@ -355,13 +360,14 @@ function Nav() {
                                     </ul>
                                 </li>
                                 <li><a href="page-lock-screen.js">Lock Screen</a></li>
-                            </ul> */}
-                        </li>
-                        <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+                            </ul>
+                        </li> */}
+
+                        {/* <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
                             <i className="flaticon-381-layer-1"></i>
                             <span className="nav-text">Resume Template Management</span>
                         </a>
-                            {/* <ul aria-expanded="false">
+                            <ul aria-expanded="false">
                                 <li><a href="page-register.js">Register</a></li>
                                 <li><a href="page-login.js">Login</a></li>
                                 <li><a className="has-arrow" href="javascript:void(0)" aria-expanded="false">Error</a>
@@ -374,9 +380,10 @@ function Nav() {
                                     </ul>
                                 </li>
                                 <li><a href="page-lock-screen.js">Lock Screen</a></li>
-                            </ul> */}
-                        </li>
-                        <li className="has-menu"><a className="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+                            </ul>
+                        </li> */}
+
+                        <li className="has-menu"><a className="has-arrow ai-icon" href="#" aria-expanded="false">
                             <i className="flaticon-381-layer-1"></i>
                             <span className="nav-text">Candidate Verification</span>
                         </a>
@@ -399,20 +406,13 @@ function Nav() {
                             <i className="flaticon-381-layer-1"></i>
                             <span className="nav-text">Settings</span>
                         </a>
-                            {/* <ul aria-expanded="false">
-                                <li><a href="page-register.js">Register</a></li>
-                                <li><a href="page-login.js">Login</a></li>
-                                <li><a className="has-arrow" href="javascript:void(0)" aria-expanded="false">Error</a>
-                                    <ul aria-expanded="false">
-                                        <li><a href="page-error-400.js">Error 400</a></li>
-                                        <li><a href="page-error-403.js">Error 403</a></li>
-                                        <li><a href="page-error-404.js">Error 404</a></li>
-                                        <li><a href="page-error-500.js">Error 500</a></li>
-                                        <li><a href="page-error-503.js">Error 503</a></li>
-                                    </ul>
+                            <ul aria-expanded="false">
+                                <li><a href="page-register.js">Logo</a></li>
+                                <li>
+                                    <Link to="/loginpage/Pageloginmain">Payment Gateways</Link>
                                 </li>
                                 <li><a href="page-lock-screen.js">Lock Screen</a></li>
-                            </ul> */}
+                            </ul>
                         </li>
                     </ul>
 

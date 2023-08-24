@@ -1,16 +1,16 @@
 import Footer from "../footer/footer";
 import Nav from "../nav/nav";
-import Application from "./Aplication";
+import Profile from "./profilepage2";
 
 
-function Applicationmain(){
+function Profilepage2main(){
     return(
         <>
             <Nav/>
-            <Application/>
+            <Profile/>
             <Footer/>
         </>
     )
 }
 
-export default Applicationmain;
+export default Profilepage2main;

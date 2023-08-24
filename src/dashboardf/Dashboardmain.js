@@ -1,3 +1,4 @@
+import Footer from "../footer/footer";
 import Nav from "../nav/nav";
 import Dashboard from "./Dashboard";
 
@@ -7,6 +8,7 @@ function Dashboardmain(){
         <>
             <Nav/>
             <Dashboard/>
+            <Footer/>
         </>
     )
 }

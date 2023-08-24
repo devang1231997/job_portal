@@ -1,16 +1,15 @@
 import Footer from "../footer/footer";
 import Nav from "../nav/nav";
-import Application from "./Aplication";
+import Chart from "./chart";
 
-
-function Applicationmain(){
+function Chartmain(){
     return(
         <>
             <Nav/>
-            <Application/>
+            <Chart/>
             <Footer/>
         </>
     )
 }
 
-export default Applicationmain;
+export default Chartmain;
